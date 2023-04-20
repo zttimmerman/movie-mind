@@ -2,6 +2,7 @@ import type { RequestHandler } from 'express'
 import '../utils/fetch-polyfill'
 import { ChatGPTAPI } from 'chatgpt'
 import axios from 'axios'
+import type { AxiosResponse } from 'axios'
 
 interface ReqQuery {
   q: string
@@ -10,7 +11,7 @@ interface ReqQuery {
 const moviesController = {
   getRecommendations: ((req, res) => {
     const query = req.query.q;
-    const tmdbBaseURL = 'https://api.themoviedb.org/3';
+    const tmdbBaseURL: string = 'https://api.themoviedb.org/3';
     // console.log('requested movie query', req.query);
     async function askGPT (): Promise<string[]> {
       const api = new ChatGPTAPI({
@@ -45,10 +46,7 @@ const moviesController = {
         console.log(result)
         return result;
       })
-      .catch(err => {
-        console.log(err)
-      })
-      .then(result => {
+      .then((result) => {
         const apiKey = process.env.TMDB_API_KEY;
         const url = tmdbBaseURL + '/search/movie';
         const promise1 = axios.get(url, {
@@ -83,13 +81,32 @@ const moviesController = {
         })
 
         const allMovies = Promise.all([promise1, promise2, promise3, promise4, promise5]);
-        const moviesDetails: object[] = [];
+        const finalResult: object[] = [];
+        const moviesDetailsPromises: Array<Promise<object>> = [];
+
         allMovies.then(results => {
-          results.forEach(movieSearchResult => {
-            moviesDetails.push(movieSearchResult[0])
+          results.forEach((movieSearchResult, index) => {
+            console.log('movie results', movieSearchResult.data.results[0]);
+            const movieId: number = movieSearchResult.data.results[0].id;
+            const url = `${tmdbBaseURL}/movie/${movieId}`;
+            moviesDetailsPromises[index] = axios.get(url, {
+              params: {
+                api_key: apiKey
+              }
+            })
           })
-          console.log(moviesDetails);
-          res.send(moviesDetails);
+
+          const allMoviesDetails = Promise.all(moviesDetailsPromises) as Promise<[AxiosResponse<any, any>, AxiosResponse<any, any>, AxiosResponse<any, any>, AxiosResponse<any, any>]>;
+
+          void allMoviesDetails
+            .then(results => {
+              console.log('result', result);
+              results.forEach((movieDetailResult) => {
+                finalResult.push(movieDetailResult.data)
+              })
+              console.log('final result', finalResult);
+              res.send(finalResult);
+            })
         })
           .catch(err => {
             console.log('unable to get movie details from TMDB, err:', err);
