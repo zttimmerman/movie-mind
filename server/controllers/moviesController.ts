@@ -26,7 +26,7 @@ const moviesController = {
        $3. Star Wars
        $4. Pirates of the Carribean
        $5. Toy Story"
-      Before each movie in the list, write the movie number with a $ in front.`)
+      Before each movie in the list, write the movie number with a $ in front. Do not put the year in the title.`)
       console.log(data.text)
 
       const lines: string[] = data.text.split('\n');

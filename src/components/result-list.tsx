@@ -1,9 +1,17 @@
-const ResultList = (): JSX.Element => {
+import ResultItem from './result-item'
+
+interface ResultListProps {
+  movies: any[]
+}
+
+const ResultList = ({ movies }: ResultListProps): JSX.Element => {
 
   return (
-    <li>
-
-    </li>
+    <ul>
+      {movies.map(movie => {
+        return <ResultItem key={movie.id} movie={movie}/>
+      })}
+    </ul>
   )
 }
 

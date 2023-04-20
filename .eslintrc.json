@@ -24,7 +24,8 @@
         "@typescript-eslint/semi": "off",
         "@typescript-eslint/no-var-requires": "off",
         "semi": "off",
-        "eol-last": "off"
+        "eol-last": "off",
+        "@typescript-eslint/member-delimiter-style": "off"
     },
     "settings": {
         "react": {
