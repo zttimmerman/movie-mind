@@ -1,7 +1,11 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const SearchMovies = (): JSX.Element => {
+interface SearchMoviesProps {
+  setMovies: React.Dispatch<React.SetStateAction<never[]>>
+}
+
+const SearchMovies = ({ setMovies }: SearchMoviesProps): JSX.Element => {
   const [query, setQuery] = useState('');
   // add handling if movie list comes but as successfull response but list is empty (GPT likely thinks query is too vague)
 
@@ -13,7 +17,8 @@ const SearchMovies = (): JSX.Element => {
       }
     })
       .then(result => {
-        console.log('result:', result);
+        console.log('result:', result.data);
+        setMovies(result.data);
       })
       .catch(err => {
         console.log('unable to get movie recommendations, error:', err);
