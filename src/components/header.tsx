@@ -1,8 +1,8 @@
 const Header = (): JSX.Element => {
   return (
-    <div>
-      <span>MovieMind</span>
-      <span className='ml-72'>Watchlist</span>
+    <div className='flex justify-between w-full'>
+      <span className=''>MovieMind</span>
+      <span className=''>Watchlist</span>
     </div>
   )
 }

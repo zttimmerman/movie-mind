@@ -7,7 +7,7 @@ interface ResultListProps {
 const ResultList = ({ movies }: ResultListProps): JSX.Element => {
 
   return (
-    <ul>
+    <ul className=''>
       {movies.map(movie => {
         return <ResultItem key={movie.id} movie={movie}/>
       })}

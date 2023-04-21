@@ -28,7 +28,7 @@ const SearchMovies = ({ setMovies }: SearchMoviesProps): JSX.Element => {
     setQuery(e.target.value);
   }
   return (
-    <form className='mt-32' onSubmit={handleSubmit}>
+    <form className='mt-32 mb-12' onSubmit={handleSubmit}>
       <label htmlFor='movie-input'>Get Movie Recommendations</label>
       <input type='text' name='movieQuery' id='movie-input' value={query} onChange={handleChange}/>
       <input type='submit' value='Search'/>
