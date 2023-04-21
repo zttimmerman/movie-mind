@@ -1,0 +1,401 @@
+[
+  {
+      "adult": false,
+      "backdrop_path": "/wOLTJxfv98miIQcn0oNXq9fIgXM.jpg",
+      "belongs_to_collection": {
+          "id": 14890,
+          "name": "Bad Boys Collection",
+          "poster_path": "/tSVbihfvVTCbcm0zXKA7L8R6Y9v.jpg",
+          "backdrop_path": "/k9hhSHg5GS4UgWQC6MHBOZrarji.jpg"
+      },
+      "budget": 19000000,
+      "genres": [
+          {
+              "id": 28,
+              "name": "Action"
+          },
+          {
+              "id": 35,
+              "name": "Comedy"
+          },
+          {
+              "id": 80,
+              "name": "Crime"
+          },
+          {
+              "id": 53,
+              "name": "Thriller"
+          }
+      ],
+      "homepage": "https://www.sonypictures.com/movies/badboys",
+      "id": 9737,
+      "imdb_id": "tt0112442",
+      "original_language": "en",
+      "original_title": "Bad Boys",
+      "overview": "Marcus Burnett is a hen-pecked family man. Mike Lowry is a foot-loose and fancy free ladies' man. Both are Miami policemen, and both have 72 hours to reclaim a consignment of drugs stolen from under their station's nose. To complicate matters, in order to get the assistance of the sole witness to a murder, they have to pretend to be each other.",
+      "popularity": 32.571,
+      "poster_path": "/x1ygBecKHfXX4M2kRhmFKWfWbJc.jpg",
+      "production_companies": [
+          {
+              "id": 5,
+              "logo_path": "/lieeAioEBVsgsoDT9HICrdt5iRa.png",
+              "name": "Columbia Pictures",
+              "origin_country": "US"
+          },
+          {
+              "id": 10288,
+              "logo_path": null,
+              "name": "Don Simpson/Jerry Bruckheimer Films",
+              "origin_country": "US"
+          }
+      ],
+      "production_countries": [
+          {
+              "iso_3166_1": "US",
+              "name": "United States of America"
+          }
+      ],
+      "release_date": "1995-04-07",
+      "revenue": 141407024,
+      "runtime": 119,
+      "spoken_languages": [
+          {
+              "english_name": "English",
+              "iso_639_1": "en",
+              "name": "English"
+          }
+      ],
+      "status": "Released",
+      "tagline": "Whatcha gonna do?",
+      "title": "Bad Boys",
+      "video": false,
+      "vote_average": 6.783,
+      "vote_count": 5573
+  },
+  {
+      "adult": false,
+      "backdrop_path": "/uw4SnKFZ453Gxmj5XR5Susj8TNo.jpg",
+      "belongs_to_collection": {
+          "id": 304378,
+          "name": "Independence Day Collection",
+          "poster_path": "/AuBMbv3gSAdTaEIzcUySRETIauY.jpg",
+          "backdrop_path": "/ou70x2658dVnbycIRaC37sEeafS.jpg"
+      },
+      "budget": 75000000,
+      "genres": [
+          {
+              "id": 28,
+              "name": "Action"
+          },
+          {
+              "id": 12,
+              "name": "Adventure"
+          },
+          {
+              "id": 878,
+              "name": "Science Fiction"
+          }
+      ],
+      "homepage": "",
+      "id": 602,
+      "imdb_id": "tt0116629",
+      "original_language": "en",
+      "original_title": "Independence Day",
+      "overview": "On July 2, a giant alien mothership enters orbit around Earth and deploys several dozen saucer-shaped 'destroyer' spacecraft that quickly lay waste to major cities around the planet. On July 3, the United States conducts a coordinated counterattack that fails. On July 4, a plan is devised to gain access to the interior of the alien mothership in space, in order to plant a nuclear missile.",
+      "popularity": 45.657,
+      "poster_path": "/p0BPQGSPoSa8Ml0DAf2mB2kCU0R.jpg",
+      "production_companies": [
+          {
+              "id": 25,
+              "logo_path": "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+              "name": "20th Century Fox",
+              "origin_country": "US"
+          },
+          {
+              "id": 347,
+              "logo_path": null,
+              "name": "Centropolis Entertainment",
+              "origin_country": "US"
+          }
+      ],
+      "production_countries": [
+          {
+              "iso_3166_1": "US",
+              "name": "United States of America"
+          }
+      ],
+      "release_date": "1996-06-25",
+      "revenue": 817400891,
+      "runtime": 145,
+      "spoken_languages": [
+          {
+              "english_name": "English",
+              "iso_639_1": "en",
+              "name": "English"
+          }
+      ],
+      "status": "Released",
+      "tagline": "Don't make plans for August.",
+      "title": "Independence Day",
+      "video": false,
+      "vote_average": 6.862,
+      "vote_count": 8587
+  },
+  {
+      "adult": false,
+      "backdrop_path": "/wM1aNIXSqB8GSeQY38LOUHYMYIw.jpg",
+      "belongs_to_collection": {
+          "id": 86055,
+          "name": "Men In Black Collection",
+          "poster_path": "/neo50PMS8QZhl4VdzXAF1Cz3sPz.jpg",
+          "backdrop_path": "/xKz6YaOvmnIJQ3MYIpnaa7FBaAB.jpg"
+      },
+      "budget": 90000000,
+      "genres": [
+          {
+              "id": 28,
+              "name": "Action"
+          },
+          {
+              "id": 12,
+              "name": "Adventure"
+          },
+          {
+              "id": 35,
+              "name": "Comedy"
+          },
+          {
+              "id": 878,
+              "name": "Science Fiction"
+          }
+      ],
+      "homepage": "https://www.sonypictures.com/movies/meninblack",
+      "id": 607,
+      "imdb_id": "tt0119654",
+      "original_language": "en",
+      "original_title": "Men in Black",
+      "overview": "After a police chase with an otherworldly being, a New York City cop is recruited as an agent in a top-secret organization established to monitor and police alien activity on Earth: the Men in Black. Agent Kay and new recruit Agent Jay find themselves in the middle of a deadly plot by an intergalactic terrorist who has arrived on Earth to assassinate two ambassadors from opposing galaxies.",
+      "popularity": 53.296,
+      "poster_path": "/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
+      "production_companies": [
+          {
+              "id": 5,
+              "logo_path": "/lieeAioEBVsgsoDT9HICrdt5iRa.png",
+              "name": "Columbia Pictures",
+              "origin_country": "US"
+          },
+          {
+              "id": 56,
+              "logo_path": "/cEaxANEisCqeEoRvODv2dO1I0iI.png",
+              "name": "Amblin Entertainment",
+              "origin_country": "US"
+          },
+          {
+              "id": 49325,
+              "logo_path": null,
+              "name": "Parkes+MacDonald Image Nation",
+              "origin_country": ""
+          }
+      ],
+      "production_countries": [
+          {
+              "iso_3166_1": "US",
+              "name": "United States of America"
+          }
+      ],
+      "release_date": "1997-07-02",
+      "revenue": 589390539,
+      "runtime": 98,
+      "spoken_languages": [
+          {
+              "english_name": "English",
+              "iso_639_1": "en",
+              "name": "English"
+          },
+          {
+              "english_name": "Spanish",
+              "iso_639_1": "es",
+              "name": "Español"
+          }
+      ],
+      "status": "Released",
+      "tagline": "Protecting the Earth from the scum of the universe.",
+      "title": "Men in Black",
+      "video": false,
+      "vote_average": 7.18,
+      "vote_count": 12417
+  },
+  {
+      "adult": false,
+      "backdrop_path": "/lhVVIWKR13khBvjFz8XyZ2GM0JS.jpg",
+      "belongs_to_collection": {
+          "id": 945984,
+          "name": "I Am Legend Collection",
+          "poster_path": "/kMWArwXFzMwCzRMRzJqZBC6d22A.jpg",
+          "backdrop_path": null
+      },
+      "budget": 150000000,
+      "genres": [
+          {
+              "id": 18,
+              "name": "Drama"
+          },
+          {
+              "id": 878,
+              "name": "Science Fiction"
+          },
+          {
+              "id": 53,
+              "name": "Thriller"
+          }
+      ],
+      "homepage": "http://iamlegend.warnerbros.com",
+      "id": 6479,
+      "imdb_id": "tt0480249",
+      "original_language": "en",
+      "original_title": "I Am Legend",
+      "overview": "Robert Neville is a scientist who was unable to stop the spread of the terrible virus that was incurable and man-made. Immune, Neville is now the last human survivor in what is left of New York City and perhaps the world. For three years, Neville has faithfully sent out daily radio messages, desperate to find any other survivors who might be out there. But he is not alone.",
+      "popularity": 89.538,
+      "poster_path": "/iPDkaSdKk2jRLTM65UOEoKtsIZ8.jpg",
+      "production_companies": [
+          {
+              "id": 79,
+              "logo_path": "/tpFpsqbleCzEE2p5EgvUq6ozfCA.png",
+              "name": "Village Roadshow Pictures",
+              "origin_country": "US"
+          },
+          {
+              "id": 433,
+              "logo_path": null,
+              "name": "Weed Road Pictures",
+              "origin_country": "US"
+          },
+          {
+              "id": 333,
+              "logo_path": "/5xUJfzPZ8jWJUDzYtIeuPO4qPIa.png",
+              "name": "Original Film",
+              "origin_country": "US"
+          },
+          {
+              "id": 174,
+              "logo_path": "/IuAlhI9eVC9Z8UQWOIDdWRKSEJ.png",
+              "name": "Warner Bros. Pictures",
+              "origin_country": "US"
+          },
+          {
+              "id": 437,
+              "logo_path": "/nu20mtwbEIhUNnQ5NXVhHsNknZj.png",
+              "name": "Heyday Films",
+              "origin_country": "GB"
+          },
+          {
+              "id": 907,
+              "logo_path": "/ca5SWI5uvU985f8Kbb4xc8AmVWH.png",
+              "name": "Overbrook Entertainment",
+              "origin_country": "US"
+          }
+      ],
+      "production_countries": [
+          {
+              "iso_3166_1": "US",
+              "name": "United States of America"
+          }
+      ],
+      "release_date": "2007-12-12",
+      "revenue": 585410052,
+      "runtime": 101,
+      "spoken_languages": [
+          {
+              "english_name": "English",
+              "iso_639_1": "en",
+              "name": "English"
+          }
+      ],
+      "status": "Released",
+      "tagline": "The last man on Earth is not alone",
+      "title": "I Am Legend",
+      "video": false,
+      "vote_average": 7.198,
+      "vote_count": 14261
+  },
+  {
+      "adult": false,
+      "backdrop_path": "/c3F4P2oauA7IQmy4hM0OmRt2W7d.jpg",
+      "belongs_to_collection": null,
+      "budget": 0,
+      "genres": [
+          {
+              "id": 878,
+              "name": "Science Fiction"
+          },
+          {
+              "id": 28,
+              "name": "Action"
+          },
+          {
+              "id": 53,
+              "name": "Thriller"
+          }
+      ],
+      "homepage": "http://skydance.com/film/gemini-man/",
+      "id": 453405,
+      "imdb_id": "tt1025100",
+      "original_language": "en",
+      "original_title": "Gemini Man",
+      "overview": "Henry Brogan is an elite 51-year-old assassin who's ready to call it quits after completing his 72nd job. His plans get turned upside down when he becomes the target of a mysterious operative who can seemingly predict his every move. To his horror, Brogan soon learns that the man who's trying to kill him is a younger, faster, cloned version of himself.",
+      "popularity": 32.265,
+      "poster_path": "/uTALxjQU8e1lhmNjP9nnJ3t2pRU.jpg",
+      "production_companies": [
+          {
+              "id": 82819,
+              "logo_path": "/zlFa3VNua4hJyGEI4X2sqDrtEH9.png",
+              "name": "Skydance Media",
+              "origin_country": "US"
+          },
+          {
+              "id": 130,
+              "logo_path": "/c9dVHPOL3cqCr2593Ahk0nEKTEM.png",
+              "name": "Jerry Bruckheimer Films",
+              "origin_country": "US"
+          },
+          {
+              "id": 69484,
+              "logo_path": "/2xtmvbEse87LM7OJXVksv7DToZx.png",
+              "name": "Alibaba Pictures Group",
+              "origin_country": "CN"
+          },
+          {
+              "id": 102774,
+              "logo_path": null,
+              "name": "Fosun Group Forever Pictures",
+              "origin_country": ""
+          }
+      ],
+      "production_countries": [
+          {
+              "iso_3166_1": "CN",
+              "name": "China"
+          },
+          {
+              "iso_3166_1": "US",
+              "name": "United States of America"
+          }
+      ],
+      "release_date": "2019-10-02",
+      "revenue": 173469516,
+      "runtime": 117,
+      "spoken_languages": [
+          {
+              "english_name": "English",
+              "iso_639_1": "en",
+              "name": "English"
+          }
+      ],
+      "status": "Released",
+      "tagline": "Who will save you from yourself?",
+      "title": "Gemini Man",
+      "video": false,
+      "vote_average": 6.317,
+      "vote_count": 4572
+  }
+]
