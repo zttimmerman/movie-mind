@@ -28,10 +28,20 @@ const SearchMovies = ({ setMovies }: SearchMoviesProps): JSX.Element => {
     setQuery(e.target.value);
   }
   return (
-    <form className='mt-32 mb-12' onSubmit={handleSubmit}>
-      <label htmlFor='movie-input'>Get Movie Recommendations</label>
-      <input type='text' name='movieQuery' id='movie-input' value={query} onChange={handleChange}/>
-      <input type='submit' value='Search'/>
+    // <form className='mt-32 mb-12' onSubmit={handleSubmit}>
+    //   <label htmlFor='movie-input'>Get Movie Recommendations</label>
+    //   <input type='text' name='movieQuery' id='movie-input' value={query} onChange={handleChange}/>
+    //   <input type='submit' value='Search'/>
+    // </form>
+    <form onSubmit={handleSubmit} className="w-10/12">
+      <div className="form-control mt-32 mb-12">
+        <div className="input-group">
+          <input type="text" placeholder="light-hearted comedy movies" className="input input-bordered w-full" onChange={handleChange} value={query}/>
+          <button type="submit" className="btn btn-square">
+            <img src="film.svg" alt="Film Reel" />
+          </button>
+        </div>
+      </div>
     </form>
   )
 }

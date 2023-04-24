@@ -1,15 +1,30 @@
 import ResultItem from './result-item'
 
 interface ResultListProps {
-  movies: any[]
+  movies: Movie[];
+  watchlist: Movie[]
+  setWatchlist: React.Dispatch<React.SetStateAction<any[]>>
 }
 
-const ResultList = ({ movies }: ResultListProps): JSX.Element => {
+interface Movie {
+  id: number
+  title: string;
+  poster_path: string;
+  overview: string;
+  release_date: string;
+  genres: Genres[]
+}
 
+interface Genres {
+  id: number;
+  name: string
+}
+
+const ResultList = ({ movies, watchlist, setWatchlist }: ResultListProps): JSX.Element => {
   return (
     <ul className=''>
       {movies.map(movie => {
-        return <ResultItem key={movie.id} movie={movie}/>
+        return <ResultItem key={movie.id} movie={movie} watchlist={watchlist} setWatchlist={setWatchlist}/>
       })}
     </ul>
   )
