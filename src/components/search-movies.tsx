@@ -28,10 +28,10 @@ const SearchMovies = ({ setMovies }: SearchMoviesProps): JSX.Element => {
     setQuery(e.target.value);
   }
   return (
-    <div className="w-10/12">
-      <h2>Enter </h2>
+    <div className="w-10/12 mt-32 mb-12">
+      <h2 className="font-bold text-xl">Enter a topic and get 5 movie recommendations</h2>
       <form onSubmit={handleSubmit} >
-        <div className="form-control mt-32 mb-12">
+        <div className="form-control mt-2">
           <div className="input-group">
             <input type="text" placeholder="light-hearted comedy movies" className="input input-bordered w-full" onChange={handleChange} value={query}/>
             <button type="submit" className="btn btn-square">

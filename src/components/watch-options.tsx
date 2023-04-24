@@ -21,7 +21,7 @@ const WatchOptions = ({ isWatchOptionsOpen, setIsWatchOptionsOpen, providers }: 
       <div className='modal-box bg-base-200 '>
         <h2 className='font-extrabold text-2xl'>Streaming</h2>
         <div className='flex my-4'>
-          {providers.flatrate.map(provider => {
+          {providers.flatrate?.map(provider => {
             return (
               <span key={provider.provider_id} className="mr-3 shrink-0">
                 <img src={`https://image.tmdb.org/t/p/w45${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
@@ -31,7 +31,7 @@ const WatchOptions = ({ isWatchOptionsOpen, setIsWatchOptionsOpen, providers }: 
         </div>
         <h2 className='font-extrabold text-2xl'>Buy</h2>
         <div className='flex my-4'>
-          {providers.buy.map(provider => {
+          {providers.buy?.map(provider => {
             return (
               <span key={provider.provider_id} className="mr-3 shrink-0">
                 <img src={`https://image.tmdb.org/t/p/w45${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
@@ -41,7 +41,7 @@ const WatchOptions = ({ isWatchOptionsOpen, setIsWatchOptionsOpen, providers }: 
         </div>
         <h2 className='font-extrabold text-2xl'>Rent</h2>
         <div className='flex my-4'>
-          {providers.rent.map(provider => {
+          {providers.rent?.map(provider => {
             return (
               <span key={provider.provider_id} className='mr-3 shrink-0'>
                 <img src={`https://image.tmdb.org/t/p/w45${provider.logo_path}`} alt="Provider Logo" className='rounded'/>

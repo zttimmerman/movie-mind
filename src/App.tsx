@@ -2,13 +2,14 @@ import { useState } from 'react'
 import Header from './components/header'
 import SearchMovies from './components/search-movies'
 import ResultList from './components/result-list'
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import testMovies from './components/test-data.json'
 import WatchList from './components/watchlist'
 import Footer from './components/footer'
 import WatchOptions from './components/watch-options'
 
 function App (): JSX.Element {
-  const [movies, setMovies] = useState(testMovies);
+  const [movies, setMovies] = useState([]);
   const [watchlist, setWatchlist] = useState<any>([]);
   const [isWatchListOpen, setIsWatchListOpen] = useState(false);
   const [isWatchOptionsOpen, setIsWatchOptionsOpen] = useState(false);
