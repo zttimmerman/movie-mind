@@ -3,7 +3,10 @@ import ResultItem from './result-item'
 interface ResultListProps {
   movies: Movie[];
   watchlist: Movie[]
-  setWatchlist: React.Dispatch<React.SetStateAction<any[]>>
+  setWatchlist: React.Dispatch<React.SetStateAction<any[]>>;
+  isWatchOptionsOpen: boolean;
+  setIsWatchOptionsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setProviders: React.Dispatch<React.SetStateAction<object>>;
 }
 
 interface Movie {
@@ -20,11 +23,11 @@ interface Genres {
   name: string
 }
 
-const ResultList = ({ movies, watchlist, setWatchlist }: ResultListProps): JSX.Element => {
+const ResultList = ({ movies, watchlist, setWatchlist, isWatchOptionsOpen, setIsWatchOptionsOpen, setProviders }: ResultListProps): JSX.Element => {
   return (
     <ul className=''>
       {movies.map(movie => {
-        return <ResultItem key={movie.id} movie={movie} watchlist={watchlist} setWatchlist={setWatchlist}/>
+        return <ResultItem key={movie.id} movie={movie} watchlist={watchlist} setWatchlist={setWatchlist} isWatchOptionsOpen={isWatchOptionsOpen} setIsWatchOptionsOpen={setIsWatchOptionsOpen} setProviders={setProviders}/>
       })}
     </ul>
   )

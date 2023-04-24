@@ -1,4 +1,4 @@
-import type { RequestHandler } from 'express'
+import type { RequestHandler, Response } from 'express'
 import '../utils/fetch-polyfill'
 import { ChatGPTAPI } from 'chatgpt'
 import axios from 'axios'
@@ -6,6 +6,12 @@ import type { AxiosResponse } from 'axios'
 
 interface ReqQuery {
   q: string
+}
+
+interface ProviderRequest extends Express.Request {
+  params: {
+    id: string
+  }
 }
 
 const moviesController = {
@@ -112,7 +118,17 @@ const moviesController = {
             console.log('unable to get movie details from TMDB, err:', err);
           })
       })
-  }) as RequestHandler<unknown, unknown, unknown, ReqQuery>
+  }) as RequestHandler<unknown, unknown, unknown, ReqQuery>,
+  getProviders: async (req: ProviderRequest, res: Response) => {
+    const tmdbBaseURL: string = 'https://api.themoviedb.org/3';
+    const providers = await axios.get(`${tmdbBaseURL}/movie/${req.params.id}/watch/providers`, {
+      params: {
+        api_key: process.env.TMDB_API_KEY
+      }
+    });
+    console.log(providers.data.results.US)
+    res.send(providers.data.results.US);
+  }
 }
 
 export default moviesController

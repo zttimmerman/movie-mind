@@ -1,7 +1,7 @@
 const Footer = (): JSX.Element => {
   return (
     <div>
-      Powered by The Movie DB
+      Powered by The Movie DB, ChatGPT
     </div>
   )
 };
