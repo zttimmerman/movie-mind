@@ -116,6 +116,7 @@ const moviesController = {
         })
           .catch(err => {
             console.log('unable to get movie details from TMDB, err:', err);
+            res.status(400).send('error');
           })
       })
   }) as RequestHandler<unknown, unknown, unknown, ReqQuery>,

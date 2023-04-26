@@ -2,15 +2,17 @@ import { useState } from 'react'
 import axios from 'axios'
 
 interface SearchMoviesProps {
-  setMovies: React.Dispatch<React.SetStateAction<never[]>>
+  setMovies: React.Dispatch<React.SetStateAction<never[]>>;
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const SearchMovies = ({ setMovies }: SearchMoviesProps): JSX.Element => {
+const SearchMovies = ({ setMovies, setIsLoading }: SearchMoviesProps): JSX.Element => {
   const [query, setQuery] = useState('');
   // add handling if movie list comes but as successfull response but list is empty (GPT likely thinks query is too vague)
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
+    setIsLoading(true);
     axios.get('http://localhost:3000/movies/search', {
       params: {
         q: query
@@ -18,9 +20,11 @@ const SearchMovies = ({ setMovies }: SearchMoviesProps): JSX.Element => {
     })
       .then(result => {
         console.log('result:', result.data);
+        setIsLoading(false);
         setMovies(result.data);
       })
       .catch(err => {
+        setIsLoading(false);
         console.log('unable to get movie recommendations, error:', err);
       })
   }

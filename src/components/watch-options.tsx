@@ -18,33 +18,33 @@ interface Provider {
 const WatchOptions = ({ isWatchOptionsOpen, setIsWatchOptionsOpen, providers }: WatchOptionsProps): JSX.Element => {
   return (
     <div className={`modal modal-bottom sm:modal-middle ${isWatchOptionsOpen ? 'modal-open' : ''}`} role='dialog' aria-modal='true'>
-      <div className='modal-box bg-base-200 '>
+      <div className='modal-box bg-base-200'>
         <h2 className='font-extrabold text-2xl'>Streaming</h2>
-        <div className='flex my-4'>
+        <div className='flex my-4 flex-wrap'>
           {providers.flatrate?.map(provider => {
             return (
-              <span key={provider.provider_id} className="mr-3 shrink-0">
-                <img src={`https://image.tmdb.org/t/p/w45${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
+              <span key={provider.provider_id} className="mr-3 mb-3 shrink-0 w-12">
+                <img src={`https://image.tmdb.org/t/p/original${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
               </span>
             )
           })}
         </div>
         <h2 className='font-extrabold text-2xl'>Buy</h2>
-        <div className='flex my-4'>
+        <div className='flex my-4 flex-wrap'>
           {providers.buy?.map(provider => {
             return (
-              <span key={provider.provider_id} className="mr-3 shrink-0">
-                <img src={`https://image.tmdb.org/t/p/w45${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
+              <span key={provider.provider_id} className="mr-3 mb-3 shrink-0 w-12">
+                <img src={`https://image.tmdb.org/t/p/original${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
               </span>
             )
           })}
         </div>
         <h2 className='font-extrabold text-2xl'>Rent</h2>
-        <div className='flex my-4'>
+        <div className='flex my-4 flex-wrap'>
           {providers.rent?.map(provider => {
             return (
-              <span key={provider.provider_id} className='mr-3 shrink-0'>
-                <img src={`https://image.tmdb.org/t/p/w45${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
+              <span key={provider.provider_id} className='mr-3 mb-3 shrink-0 w-12'>
+                <img src={`https://image.tmdb.org/t/p/original${provider.logo_path}`} alt="Provider Logo" className='rounded'/>
               </span>
             )
           })}

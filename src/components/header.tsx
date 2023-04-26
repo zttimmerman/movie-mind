@@ -9,7 +9,8 @@ const Header = ({ isWatchListOpen, setIsWatchListOpen }: HeaderProps): JSX.Eleme
   }
   return (
     <div className="flex justify-between w-full mt-4">
-      <h1 className="text-4xl font-bold font-['monospacetypewriterregular']">MovieMind</h1>
+      {/* <h1 className="text-4xl font-bold font-['monospacetypewriterregular']">MovieMind</h1> */}
+      <img src="logo-no-background.svg" alt="Movie Mind Logo" className="w-72"/>
       <button className="btn btn-info -my-1 font-extrabold text-2xl" onClick={handleClick}>Watchlist</button>
     </div>
   )
