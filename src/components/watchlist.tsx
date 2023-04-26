@@ -30,7 +30,8 @@ const WatchList = ({ isWatchListOpen, setIsWatchListOpen, watchlist, setWatchlis
   return (
     <div className={`modal modal-bottom sm:modal-middle ${isWatchListOpen ? 'modal-open' : ''}`} role='dialog' aria-modal='true'>
       <div className='modal-box bg-base-300'>
-        <div>
+        <div className="flex justify-center items-center">
+          {watchlist.length === 0 && <p className="italic">No movies in watchlist. Try adding one!</p>}
           {watchlist.map(movie => {
             return (
               <div key={movie.id} className="flex w-11/12 mb-2">
