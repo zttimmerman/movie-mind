@@ -32,8 +32,8 @@ const SearchMovies = ({ setMovies, setIsLoading }: SearchMoviesProps): JSX.Eleme
     setQuery(e.target.value);
   }
   return (
-    <div className="w-10/12 mt-32 mb-12">
-      <h2 className="font-bold text-xl">Enter a topic and get 5 movie recommendations</h2>
+    <div className="w-10/12 mt-24 mb-12 flex flex-col">
+      <h2 className="font-bold text-xl mx-auto mb-2">Enter a topic and get 5 movie recommendations</h2>
       <form onSubmit={handleSubmit} >
         <div className="form-control mt-2">
           <div className="input-group">

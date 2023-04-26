@@ -25,7 +25,8 @@
         "@typescript-eslint/no-var-requires": "off",
         "semi": "off",
         "eol-last": "off",
-        "@typescript-eslint/member-delimiter-style": "off"
+        "@typescript-eslint/member-delimiter-style": "off",
+        "@typescript-eslint/no-misused-promises": "off"
     },
     "settings": {
         "react": {
